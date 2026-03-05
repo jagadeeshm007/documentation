@@ -1,0 +1,71 @@
+site_name: Jagadeesh M - Engineering Blog
+site_description: Software Engineering Projects, Architecture, and DevOps writing by Jagadeesh M.
+site_author: Jagadeesh M
+site_url: https://jagadeeshm007.github.io/paybill-doc/
+
+repo_name: jagadeeshm007/paybill-doc
+repo_url: https://github.com/jagadeeshm007/paybill-doc
+edit_uri: edit/main/docs/
+
+theme:
+  name: material
+  custom_dir: docs/overrides
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.top
+    - search.suggest
+    - search.highlight
+    - content.code.copy
+    - content.action.edit
+  palette:
+    # Palette toggle for light mode
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    # Palette toggle for dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - attr_list
+  - md_in_html
+
+nav:
+  - Home: index.md
+  - Projects:
+      - PayBill (Mobile Payments):
+          - Table of Contents: projects/paybill/README.md
+          - Ch 1. Foundation: projects/paybill/paybill-engineering-blog.md
+          - Ch 2. Security & RBAC: projects/paybill/paybill-security-auth-rbac-blog.md
+          - Ch 3. Forms & Approvals: projects/paybill/paybill-approval-forms-blog.md
+          - Ch 4. QR Scanning: projects/paybill/paybill-qr-scanning-blog.md
+          - Ch 5. Offline Sync: projects/paybill/paybill-offline-sync-blog.md
+      - Flux RAG Assistant: projects/flux-rag-assistant.md
+      - ERPNext HR Platform: projects/erpnext-hr-platform.md
+      - LP Rail Automation: projects/lp-rail-automation.md
+  - Architecture:
+      - RAG System Design: architecture/rag-system-design.md
+      - Backend Architecture: architecture/backend-architecture.md
