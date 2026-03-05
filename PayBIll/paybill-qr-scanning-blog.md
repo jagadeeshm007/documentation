@@ -45,7 +45,9 @@ A raw camera feed feels unfinished. We layered our scanner with custom UI render
 - **Precision Corner Markers:** Guiding the user's eye to the optimal scanning zone.
 - **Continuous Laser Sweep Animation:** Utilizing React Native Reanimated to run a smooth sweeping line over the target area without lagging the primary UI thread.
 
-![Transaction Details screen showcasing the deeply integrated visual QR element mapped to the current record.](./assets/images/transaction-details-qr.png)
+<div align="center">
+  <img src="./assets/images/transaction-details-qr.png" alt="Transaction Details screen showcasing the deeply integrated visual QR element mapped to the current record." width="300" style="border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.15); margin: 20px 0;" />
+</div>
 
 ---
 
@@ -59,7 +61,9 @@ To handle this, we implemented interactive Transaction Drafts and receipts. Upon
 
 These modal sheets incorporate dynamically generated QR codes reflecting the exact transaction hash or the user's receiving URI.
 
-![A dynamic QR Share Sheet overlay presented seamlessly without exiting the primary route.](./assets/images/qr-share-sheet.png)
+<div align="center">
+  <img src="./assets/images/qr-share-sheet.png" alt="A dynamic QR Share Sheet overlay presented seamlessly without exiting the primary route." width="300" style="border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.15); margin: 20px 0;" />
+</div>
 
 Users can screenshot the generated code or use our "Copy to Clipboard" functionality built directly into the UI overlay.
 

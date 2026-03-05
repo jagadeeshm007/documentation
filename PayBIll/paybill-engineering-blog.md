@@ -16,8 +16,11 @@ In the rapidly evolving financial technology space, managing bills and peer-to-p
 
 ---
 
-![PayBill Home Dashboard](./assets/images/home-dashboard.png)
-_The PayBill Home Dashboard showing an overview of recent transactions and active projects._
+<div align="center">
+  <img src="./assets/images/home-dashboard.png" alt="PayBill Home Dashboard" width="300" style="border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.15); margin: 20px 0;" />
+  <br/>
+  <em>The PayBill Home Dashboard showing an overview of recent transactions and active projects.</em>
+</div>
 
 ## The Problem Statement
 
@@ -52,8 +55,11 @@ This unidirectional data flow creates a predictable application lifecycle:
 
 ---
 
-![Transactions List](./assets/images/transactions-list.png)
-_A fast, filterable transactions list powered by Zustand and Supabase._
+<div align="center">
+  <img src="./assets/images/transactions-list.png" alt="Transactions List" width="300" style="border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.15); margin: 20px 0;" />
+  <br/>
+  <em>A fast, filterable transactions list powered by Zustand and Supabase.</em>
+</div>
 
 ## Technology Stack
 
@@ -73,8 +79,11 @@ Every piece of technology in PayBill was chosen to optimize developer velocity w
 
 ---
 
-![Biometric Authentication](./assets/images/biometric-auth.png)
-_Secure biometric unlock screen preventing unauthorized access._
+<div align="center">
+  <img src="./assets/images/biometric-auth.png" alt="Biometric Authentication" width="300" style="border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.15); margin: 20px 0;" />
+  <br/>
+  <em>Secure biometric unlock screen preventing unauthorized access.</em>
+</div>
 
 ## Domain-Driven Project Structure
 
@@ -115,8 +124,11 @@ Upon completing a transaction, we generate localized `BottomSheetModal` componen
 
 ---
 
-![Transaction Review Step](./assets/images/transaction-review.png)
-_A multi-step transaction review screen seamlessly handling complex form inputs._
+<div align="center">
+  <img src="./assets/images/transaction-review.png" alt="Transaction Review Step" width="300" style="border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.15); margin: 20px 0;" />
+  <br/>
+  <em>A multi-step transaction review screen seamlessly handling complex form inputs.</em>
+</div>
 
 ## Overcoming Architectural Challenges
 

@@ -40,13 +40,17 @@ When a user logs in, they receive a JWT. Instead of storing this directly in ins
 
 Before the application even mounts the React tree, we intercept the startup sequence with an `AppLock` screen. This requires Passcode or Biometric confirmation (FaceID/TouchID). It ensures that even if a device is handed to someone else while unlocked, the financial data inside PayBill remains protected.
 
-![Biometric Authentication overlay restricting app access until verified.](./assets/images/biometric-auth.png)
+<div align="center">
+  <img src="./assets/images/biometric-auth.png" alt="Biometric Authentication overlay restricting app access until verified." width="300" style="border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.15); margin: 20px 0;" />
+</div>
 
 ### Secure Account Switching
 
 To support shared devices (e.g., a shared tablet at a construction site office), we implemented a Multi-user Login flow. The local state management retains secure context pointers to different encrypted session tokens. Swapping accounts requires biometric re-authentication but fundamentally avoids the heavy cost of a full cold-start login network request.
 
-![Multi-user Account Selection Screen showing secure workspace boundaries.](./assets/images/multi-user-login.png)
+<div align="center">
+  <img src="./assets/images/multi-user-login.png" alt="Multi-user Account Selection Screen showing secure workspace boundaries." width="300" style="border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.15); margin: 20px 0;" />
+</div>
 
 ---
 
