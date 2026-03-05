@@ -12,7 +12,6 @@ This site serves as a central repository for documenting my technical projects, 
 
 - [**Flux RAG Assistant**](projects/flux-rag-assistant.md): A Retrieval-Augmented Generation AI system.
 - [**ERPNext HR Platform**](projects/erpnext-hr-platform.md): System integration and heavy customisation for enterprise modules.
-- [**LP Rail Automation**](projects/lp-rail-automation.md): Core backend and automation workflows for rail products.
 
 ## 🏗️ Architecture & System Design
 

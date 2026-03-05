@@ -65,7 +65,6 @@ nav:
           - Ch 5. Offline Sync: projects/paybill/paybill-offline-sync-blog.md
       - Flux RAG Assistant: projects/flux-rag-assistant.md
       - ERPNext HR Platform: projects/erpnext-hr-platform.md
-      - LP Rail Automation: projects/lp-rail-automation.md
   - Architecture:
       - RAG System Design: architecture/rag-system-design.md
       - Backend Architecture: architecture/backend-architecture.md
