@@ -49,6 +49,8 @@ For instance, if the status is `Approved`, a `user` sees a read-only timeline. A
 
 To make this transparent to the end-user, we built the `ApprovalTimeline` component. This visualizes every state change, documenting _who_ made the decision and _when_. It's a localized Git-blame for financial transactions, ensuring absolute accountability.
 
+![The Approval Timeline documenting each transition status with user signatures.](./assets/images/approval-timeline.png)
+
 ---
 
 ## 3. Handling Denials and Edge Cases
@@ -57,5 +59,7 @@ Not every transaction succeeds. The engine handles complex denial paths:
 
 - **Admin Denied:** Kicked back to the user to edit and resubmit.
 - **Bills Quality Failed:** The accountant rejects the upload, requiring the user to take a clearer picture of the receipt.
+
+![UI Options to upload receipts or edit the transaction form directly from the detail view.](./assets/images/transaction-form-actions.png)
 
 By strictly mapping these states and relying on our Zod schemas to ensure data integrity at every step of resubmission, the PayBill Approval Engine creates a frictionless, auditable, and immutable record of every penny processed through the system.

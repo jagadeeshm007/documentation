@@ -36,6 +36,8 @@ If a user begins a payment but loses signal (or simply needs to stop to retrieve
 2. **Metadata Versioning:** We attach unique offline IDs to these drafts so they can be securely tracked.
 3. **Session Resumption:** When the user returns to the app, the "Saved Drafts" tab reads the local SQLite/AsyncStorage cache. The user can resume exactly where they left off, even miles away from a stable internet connection.
 
+![The Transactions List view showing the separation between synced history and persistent Local Drafts.](./assets/images/transactions-list.png)
+
 ---
 
 ## 3. The Auto Re-Sync Engine

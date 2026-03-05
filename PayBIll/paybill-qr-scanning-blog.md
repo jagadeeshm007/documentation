@@ -38,6 +38,8 @@ A raw camera feed feels unfinished. We layered our scanner with custom UI render
 - **Precision Corner Markers:** Guiding the user's eye to the optimal scanning zone.
 - **Continuous Laser Sweep Animation:** Utilizing React Native Reanimated to run a smooth sweeping line over the target area without lagging the primary UI thread.
 
+![Transaction Details screen showcasing the deeply integrated visual QR element mapped to the current record.](./assets/images/transaction-details-qr.png)
+
 ---
 
 ## 3. Dynamic QR Receipt Generation
@@ -49,6 +51,8 @@ Scanning is only half the problem. When a PayBill user completes an offline tran
 To handle this, we implemented interactive Transaction Drafts and receipts. Upon completing a payment, localized `BottomSheetModal` components generate shareable, dynamic receipts directly within the `app/transaction/[id].tsx` route to avoid complex top-level Z-index navigation conflicts.
 
 These modal sheets incorporate dynamically generated QR codes reflecting the exact transaction hash or the user's receiving URI.
+
+![A dynamic QR Share Sheet overlay presented seamlessly without exiting the primary route.](./assets/images/qr-share-sheet.png)
 
 Users can screenshot the generated code or use our "Copy to Clipboard" functionality built directly into the UI overlay.
 
